@@ -1,0 +1,20 @@
+<html>
+    <body>
+        <p>
+            Click the button to evaluate/execute Javascript codes/expressions.
+        </p>
+        <button onclick="myFunction()">try it</button>
+        <p id="Result"></p>
+        <script>
+            function myFunction() {
+         var x = 18;
+         var y = 23;
+         var a = eval("x + y") + "<br>";
+          var b = eval("x * y") + "<br>";
+         var c = eval("y - x") + "<br>";
+         var res = a + b + c;
+         document.getElementById("Result").innerHTML=res;
+            }
+        </script>
+    </body>
+</html>
