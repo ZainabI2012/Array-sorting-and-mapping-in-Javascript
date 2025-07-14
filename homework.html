@@ -1,8 +1,12 @@
 <html>
     <body>
+
         <p id="product_value"></p>
         <script>
-         var numbers = [87, 67, 39, 95];
+         var numbers = [87, 67, 43, 89, 64, 21];
+         function myFunction(num) {
+          return num * 10;
+         }
               function myFunction() {
          var x = 87;
          var y = 67;
@@ -12,12 +16,8 @@
          var res = a + b + c;
          document.getElementById("Result").innerHTML=res;
             }
-         function myFunction(num) {
-          return num * 5;
-         }
          var newarray = numbers.map(myFunction);
          document.getElementById("product_value").innerHTML = newarray;
-
          </script>
      </body>
 </html>
